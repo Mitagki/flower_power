@@ -506,12 +506,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     'kzxff2mm': {
-      'en': 'Papaver rhoeas',
+      'en': 'Bellis perennis',
       'bg': '',
       'nl': '',
     },
     'wky18u2q': {
-      'en': 'Count: 3',
+      'en': 'Count: 11',
       'bg': '',
       'nl': '',
     },
@@ -520,113 +520,28 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'bg': '',
       'nl': '',
     },
-    'eexijra3': {
-      'en': '10/05/2023',
+    '9he31p3l': {
+      'en': '10/05/2023 13:30',
       'bg': '',
       'nl': '',
     },
-    'b5zufpbn': {
-      'en': '13:30',
-      'bg': '',
-      'nl': '',
-    },
-    'q801zwtn': {
-      'en': 'Glebionis segetum',
-      'bg': '',
-      'nl': '',
-    },
-    '7rws11in': {
-      'en': 'Count: 7',
-      'bg': '',
-      'nl': '',
-    },
-    'ueh5kmqa': {
-      'en': 'Eindhoven',
-      'bg': '',
-      'nl': '',
-    },
-    '7hbx7hkn': {
-      'en': '09/05/2023',
-      'bg': '',
-      'nl': '',
-    },
-    'vaiwknlw': {
-      'en': '12:30',
-      'bg': '',
-      'nl': '',
-    },
-    'acmv8odp': {
+    '3ovxg89x': {
       'en': 'Ficaria verna',
       'bg': '',
       'nl': '',
     },
-    '7o9ky7q5': {
-      'en': 'Count: 6',
+    'e9vwzmqa': {
+      'en': 'Count: 49',
       'bg': '',
       'nl': '',
     },
-    'm0ujhrzu': {
+    'm7zhvrm4': {
       'en': 'Eindhoven',
       'bg': '',
       'nl': '',
     },
-    '9tf3yxso': {
-      'en': '08/05/2023',
-      'bg': '',
-      'nl': '',
-    },
-    'i9a0hx7r': {
-      'en': '11:30',
-      'bg': '',
-      'nl': '',
-    },
-    'bmtjptt7': {
-      'en': 'Bellis perennis',
-      'bg': '',
-      'nl': '',
-    },
-    '2bws1ujx': {
-      'en': 'Count: 12',
-      'bg': '',
-      'nl': '',
-    },
-    '14mknt9u': {
-      'en': 'Eindhoven',
-      'bg': '',
-      'nl': '',
-    },
-    'qp96akc3': {
-      'en': '07/05/2023',
-      'bg': '',
-      'nl': '',
-    },
-    'd6k7zmac': {
-      'en': '10:30',
-      'bg': '',
-      'nl': '',
-    },
-    'igxegiou': {
-      'en': 'Dianthus barbatus',
-      'bg': '',
-      'nl': '',
-    },
-    'j5avltzd': {
-      'en': 'Count: 16',
-      'bg': '',
-      'nl': '',
-    },
-    'sg8ebabh': {
-      'en': 'Eindhoven',
-      'bg': '',
-      'nl': '',
-    },
-    '1tdal58x': {
-      'en': '06/05/2023',
-      'bg': '',
-      'nl': '',
-    },
-    'g87v3i3p': {
-      'en': '14:30',
+    '0gumizpu': {
+      'en': '08/05/2023 11:30',
       'bg': '',
       'nl': '',
     },
@@ -686,28 +601,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'bg': '',
       'nl': '',
     },
-    'lobvrq78': {
-      'en': 'Papaver',
+    'bytvx97r': {
+      'en': 'Bellis perennis',
       'bg': '',
       'nl': '',
     },
-    's1ingxf6': {
-      'en': 'Count: 3',
+    '8mwqujpl': {
+      'en': 'Count: 11',
       'bg': '',
       'nl': '',
     },
-    '0ivqwlkh': {
+    '8p20ny0k': {
       'en': 'Eindhoven',
       'bg': '',
       'nl': '',
     },
-    'w5l5i3gt': {
-      'en': '10/05/2023',
-      'bg': '',
-      'nl': '',
-    },
-    '9zzny8mk': {
-      'en': '13:30',
+    '3g6s2pyy': {
+      'en': '10/05/2023 13:30',
       'bg': '',
       'nl': '',
     },
@@ -822,6 +732,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'bg': '',
       'nl': '',
     },
+    '72a055om': {
+      'en': 'Bellis perennis',
+      'bg': '',
+      'nl': '',
+    },
+    'as2d7274': {
+      'en': 'Daisy',
+      'bg': '',
+      'nl': '',
+    },
+    'ei15imii': {
+      'en': 'Ficaria verna',
+      'bg': '',
+      'nl': '',
+    },
+    '5hr0t74q': {
+      'en': 'Lesser celandine',
+      'bg': '',
+      'nl': '',
+    },
     'fkod3qws': {
       'en': 'Papaver rhoeas',
       'bg': '',
@@ -839,26 +769,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '9abgrh29': {
       'en': 'Corn marigold',
-      'bg': '',
-      'nl': '',
-    },
-    'ei15imii': {
-      'en': 'Ficaria verna',
-      'bg': '',
-      'nl': '',
-    },
-    '5hr0t74q': {
-      'en': 'Lesser celandine',
-      'bg': '',
-      'nl': '',
-    },
-    '72a055om': {
-      'en': 'Bellis perennis',
-      'bg': '',
-      'nl': '',
-    },
-    'as2d7274': {
-      'en': 'Daisy',
       'bg': '',
       'nl': '',
     },
@@ -1120,38 +1030,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // wildflowerDetails
   {
     '6fu6v0x1': {
-      'en': 'Wildflower Details',
+      'en': 'About the species',
       'bg': '',
       'nl': '',
     },
     '4vcib0wl': {
-      'en': 'Wildflower Name',
+      'en': 'Bellis perennis',
       'bg': '',
       'nl': '',
     },
     'xciuwfj4': {
-      'en': 'Scientific Name',
+      'en': 'Daisy',
       'bg': '',
       'nl': '',
     },
     'klvt48l3': {
       'en':
-          'This wildflower is native to the region and can be found in various habitats such as meadows, forests, and along roadsides. It blooms in the spring and attracts a variety of pollinators.',
-      'bg': '',
-      'nl': '',
-    },
-    'kbmwwo4r': {
-      'en': 'Height',
-      'bg': '',
-      'nl': '',
-    },
-    'wcgie030': {
-      'en': 'Bloom Time',
-      'bg': '',
-      'nl': '',
-    },
-    'gjkxpviz': {
-      'en': 'Habitat',
+          'Bellis perennis (/ˈbɛləs pəˈrɛnəs/), the daisy, is a European species of the family Asteraceae, often considered the archetypal species of the name daisy. To distinguish this species from other plants known as daisies, it is sometimes qualified as common daisy, lawn daisy or English daisy.',
       'bg': '',
       'nl': '',
     },
@@ -1162,7 +1057,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'o82oee7w': {
       'en':
-          'This wildflower is an important source of nectar for bees and butterflies, as well as a host plant for various caterpillar species. It is also used in traditional medicine for its various health benefits.',
+          'Bellis perennis is a perennial herbaceous plant growing to 20 centimetres (8 inches) in height. It has short creeping rhizomes and rosettes of small rounded or spoon-shaped leaves that are from 2 to 5 cm (3⁄4–2 in) long and grow flat to the ground. The species habitually colonises lawns, and is difficult to eradicate by mowing, hence the term \'lawn daisy\'. It blooms from March to September and exhibits the phenomenon of heliotropism, in which the flowers follow the position of the sun in the sky.\n\nThe flowerheads are composite, about 2 to 3 cm (3⁄4–1+1⁄4 in) in diameter, in the form of a pseudanthium, consisting of many sessile flowers with white ray florets (often tipped red) and yellow disc florets. Each inflorescence is borne on a single leafless stem 2 to 10 cm (3⁄4–4 in), rarely 15 cm (6 in) tall. The capitulum, or disc of florets, is surrounded by two rows of green bracts known as \"phyllaries\". The achenes are without pappus.',
       'bg': '',
       'nl': '',
     },
@@ -1175,12 +1070,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     '2i045o79': {
-      'en': 'Wildflower Name',
+      'en': 'Bellis perennis',
       'bg': '',
       'nl': '',
     },
     'ityy3417': {
-      'en': 'Scientific Name',
+      'en': 'Daisy',
       'bg': '',
       'nl': '',
     },
@@ -1190,7 +1085,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     '6v7686mc': {
-      'en': '5',
+      'en': '11',
       'bg': '',
       'nl': '',
     },
@@ -1200,7 +1095,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     'tya0a6g4': {
-      'en': 'Central Park, New York',
+      'en': 'Eindhoven',
       'bg': '',
       'nl': '',
     },
@@ -1210,17 +1105,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     'o8g6pcp4': {
-      'en': 'July 20, 2021 - 10:30am',
-      'bg': '',
-      'nl': '',
-    },
-    'q58kxzd4': {
-      'en': 'Unlocked Medal',
+      'en': '10/05/2023 13:30',
       'bg': '',
       'nl': '',
     },
     'b2mfzpqh': {
-      'en': 'View Wildflower Details',
+      'en': 'About the species',
       'bg': '',
       'nl': '',
     },
@@ -1264,7 +1154,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     'wepuz5ao': {
-      'en': 'Learn More',
+      'en': 'Challenge Details',
       'bg': '',
       'nl': '',
     },
@@ -1277,7 +1167,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'nl': '',
     },
     '1wt4y7ac': {
-      'en': '30-Day Fitness Challenge',
+      'en': 'Weekly Eindhoven Challenge',
       'bg': '',
       'nl': '',
     },
@@ -1288,7 +1178,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'd72vitqq': {
       'en':
-          'Join our 30-day fitness challenge to kickstart your fitness journey. Participate in daily workouts, track your progress, and share your results with the community.',
+          'Join our Weekly Eindhoven Challenge to kickstart your journey. Participate, track your progress, and share your results with the community.',
       'bg': '',
       'nl': '',
     },
@@ -1309,6 +1199,94 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'k178skh7': {
       'en': 'Join Challenge',
+      'bg': '',
+      'nl': '',
+    },
+  },
+  // observationDetailsCopy
+  {
+    '3ez0l3ez': {
+      'en': 'Observation Details',
+      'bg': '',
+      'nl': '',
+    },
+    '3v0q2zym': {
+      'en': 'Ficaria verna',
+      'bg': '',
+      'nl': '',
+    },
+    'ptf8c8nf': {
+      'en': 'Lesser celandine or Pilewort',
+      'bg': '',
+      'nl': '',
+    },
+    '6gjlkiee': {
+      'en': 'Count',
+      'bg': '',
+      'nl': '',
+    },
+    'xyt5adif': {
+      'en': '49',
+      'bg': '',
+      'nl': '',
+    },
+    'mt36fpq4': {
+      'en': 'Location',
+      'bg': '',
+      'nl': '',
+    },
+    'tdfaupxy': {
+      'en': 'Eindhoven',
+      'bg': '',
+      'nl': '',
+    },
+    'b6cummbb': {
+      'en': 'Date & Time',
+      'bg': '',
+      'nl': '',
+    },
+    'jlnsd82t': {
+      'en': '08/05/2023 11:30',
+      'bg': '',
+      'nl': '',
+    },
+    'pjn9y3u7': {
+      'en': 'About the species',
+      'bg': '',
+      'nl': '',
+    },
+  },
+  // wildflowerDetailsCopy
+  {
+    'lg47pvhe': {
+      'en': 'About the species',
+      'bg': '',
+      'nl': '',
+    },
+    'cyn16tm4': {
+      'en': 'Ficaria verna',
+      'bg': '',
+      'nl': '',
+    },
+    'nywio16w': {
+      'en': 'Lesser celandine or Pilewort',
+      'bg': '',
+      'nl': '',
+    },
+    'lny0uvha': {
+      'en':
+          'Ficaria verna (formerly Ranunculus ficaria L.), commonly known as lesser celandine or pilewort, is a low-growing, hairless perennial flowering plant in the buttercup family Ranunculaceae native to Europe and Western Asia. It has fleshy dark green, heart-shaped leaves and distinctive flowers with bright yellow, glossy petals.',
+      'bg': '',
+      'nl': '',
+    },
+    '7eyxheo8': {
+      'en': 'Additional Information',
+      'bg': '',
+      'nl': '',
+    },
+    'xnnnh57s': {
+      'en':
+          'It is now introduced in North America, where it is known by the common name fig buttercup and considered an invasive species. The plant is poisonous if ingested raw and potentially fatal to grazing animals and livestock such as horses, cattle, and sheep. For these reasons, several US states have banned the plant or listed it as a noxious weed. It prefers bare, damp ground and is considered by horticulturalists in the United Kingdom as a persistent garden weed  nevertheless, many specialist plantsmen, nursery owners and discerning gardeners in the UK and Europe collect selected cultivars of the plant, including bronze-leaved and double-flowered ones. Emerging in late winter with flowers appearing late February through May in the UK, its appearance across the landscape is regarded by many as a harbinger of spring.',
       'bg': '',
       'nl': '',
     },
@@ -1546,6 +1524,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'bg': '',
       'nl': '',
     },
+    'lraa6o3v': {
+      'en': 'Button',
+      'bg': '',
+      'nl': '',
+    },
     'o1rrlzx6': {
       'en': 'Height',
       'bg': '',
@@ -1558,6 +1541,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nz3cf73l': {
       'en': 'Habitat',
+      'bg': '',
+      'nl': '',
+    },
+    'wd9n3v6s': {
+      'en': 'Height',
       'bg': '',
       'nl': '',
     },

@@ -1,8 +1,8 @@
-import '/components/challenge_detail_component/challenge_detail_component_widget.dart';
 import '/components/main_logo/main_logo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/challenge_details/challenge_details_widget.dart';
 import 'challenges_widget.dart' show ChallengesWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';

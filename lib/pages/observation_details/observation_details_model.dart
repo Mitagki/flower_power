@@ -1,8 +1,8 @@
-import '/components/wildflower_details_component/wildflower_details_component_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/wildflower_details/wildflower_details_widget.dart';
 import 'observation_details_widget.dart' show ObservationDetailsWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

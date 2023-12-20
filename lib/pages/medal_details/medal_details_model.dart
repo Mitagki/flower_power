@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/challenge_details/challenge_details_widget.dart';
 import 'medal_details_widget.dart' show MedalDetailsWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

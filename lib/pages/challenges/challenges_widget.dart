@@ -1,8 +1,8 @@
-import '/components/challenge_detail_component/challenge_detail_component_widget.dart';
 import '/components/main_logo/main_logo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/challenge_details/challenge_details_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -167,20 +167,14 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                   onTap: () async {
                                     logFirebaseEvent(
                                         'CHALLENGES_Container_6sonctoq_ON_TAP');
-                                    logFirebaseEvent('Container_bottom_sheet');
-                                    await showModalBottomSheet(
-                                      isScrollControlled: true,
-                                      backgroundColor: Colors.transparent,
-                                      context: context,
-                                      builder: (context) {
-                                        return Padding(
-                                          padding:
-                                              MediaQuery.viewInsetsOf(context),
-                                          child:
-                                              ChallengeDetailComponentWidget(),
-                                        );
-                                      },
-                                    ).then((value) => safeSetState(() {}));
+                                    logFirebaseEvent('Container_navigate_to');
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ChallengeDetailsWidget(),
+                                      ),
+                                    );
                                   },
                                   child: Container(
                                     width: double.infinity,
@@ -238,12 +232,13 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                             .spaceBetween,
                                                     children: [
                                                       Expanded(
-                                                        child: Text(
+                                                        child: AutoSizeText(
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
                                                             '4tmat7pq' /* Weekly Eindhoven Challenge */,
                                                           ),
+                                                          maxLines: 2,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .headlineSmall,
@@ -479,12 +474,13 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                           .spaceBetween,
                                                   children: [
                                                     Expanded(
-                                                      child: Text(
+                                                      child: AutoSizeText(
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
                                                           'fm3inzag' /* Weekly Country Challenge */,
                                                         ),
+                                                        maxLines: 2,
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -580,6 +576,7 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                                 .getText(
                                                               '5s5p7b0w' /* The Netherlands */,
                                                             ),
+                                                            maxLines: 1,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall,
@@ -979,12 +976,13 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                           .spaceBetween,
                                                   children: [
                                                     Expanded(
-                                                      child: Text(
+                                                      child: AutoSizeText(
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
                                                           'rpep5rpl' /* Monthly Country Challenge */,
                                                         ),
+                                                        maxLines: 2,
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1080,6 +1078,7 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                                 .getText(
                                                               'jpi3p2i3' /* The Netherlands */,
                                                             ),
+                                                            maxLines: 1,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall,
@@ -1228,12 +1227,13 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                           .spaceBetween,
                                                   children: [
                                                     Expanded(
-                                                      child: Text(
+                                                      child: AutoSizeText(
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
                                                           '5f70uxr1' /* Poppies */,
                                                         ),
+                                                        maxLines: 2,
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1329,6 +1329,7 @@ class _ChallengesWidgetState extends State<ChallengesWidget>
                                                                 .getText(
                                                               'l32yoohb' /* The Netherlands */,
                                                             ),
+                                                            maxLines: 1,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall,

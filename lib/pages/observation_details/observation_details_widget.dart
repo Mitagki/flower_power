@@ -1,8 +1,8 @@
-import '/components/wildflower_details_component/wildflower_details_component_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/wildflower_details/wildflower_details_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -77,8 +77,11 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 22.0,
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
+                        onPressed: () async {
+                          logFirebaseEvent(
+                              'OBSERVATION_DETAILS_arrow_back_ios_round');
+                          logFirebaseEvent('IconButton_navigate_back');
+                          Navigator.pop(context);
                         },
                       ),
                       Text(
@@ -101,10 +104,8 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                     ],
                   ),
                 ),
-                Image.network(
-                  'https://images.unsplash.com/photo-1518729403732-47c64eafbc15?w=1280&h=720',
-                  width: double.infinity,
-                  height: 240.0,
+                Image.asset(
+                  'assets/images/dasdasdasdas.jpg',
                   fit: BoxFit.cover,
                 ),
                 Padding(
@@ -115,17 +116,17 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '2i045o79' /* Wildflower Name */,
+                            '2i045o79' /* Bellis perennis */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .headlineMediumFamily,
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color: FlutterFlowTheme.of(context).primary,
                                 fontSize: 24.0,
                                 fontWeight: FontWeight.w500,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
@@ -134,30 +135,26 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                               ),
                         ),
                       ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'ityy3417' /* Scientific Name */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .titleMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleMediumFamily,
-                                color: FlutterFlowTheme.of(context).primary,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleMediumFamily),
-                              ),
+                      Text(
+                        FFLocalizations.of(context).getText(
+                          'ityy3417' /* Daisy */,
                         ),
+                        style: FlutterFlowTheme.of(context)
+                            .titleMedium
+                            .override(
+                              fontFamily: FlutterFlowTheme.of(context)
+                                  .titleMediumFamily,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w500,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context)
+                                      .titleMediumFamily),
+                            ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
                             '657s9sh6' /* Count */,
@@ -178,7 +175,7 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Text(
                         FFLocalizations.of(context).getText(
-                          '6v7686mc' /* 5 */,
+                          '6v7686mc' /* 11 */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily:
@@ -193,7 +190,7 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
                             'g4adqnwy' /* Location */,
@@ -214,7 +211,7 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Text(
                         FFLocalizations.of(context).getText(
-                          'tya0a6g4' /* Central Park, New York */,
+                          'tya0a6g4' /* Eindhoven */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily:
@@ -229,7 +226,7 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
                             'x5xocg0w' /* Date & Time */,
@@ -250,7 +247,7 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Text(
                         FFLocalizations.of(context).getText(
-                          'o8g6pcp4' /* July 20, 2021 - 10:30am */,
+                          'o8g6pcp4' /* 10/05/2023 13:30 */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily:
@@ -265,72 +262,21 @@ class _ObservationDetailsWidgetState extends State<ObservationDetailsWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'q58kxzd4' /* Unlocked Medal */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .titleMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleMediumFamily,
-                                color: FlutterFlowTheme.of(context).primary,
-                                fontSize: 14.0,
-                                fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleMediumFamily),
-                              ),
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(60.0),
-                              child: Image.asset(
-                                'assets/images/pngwing.com.png',
-                                width: 60.0,
-                                height: 60.0,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 10.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             logFirebaseEvent(
-                                'OBSERVATION_DETAILS_VIEW_WILDFLOWER_DETA');
-                            logFirebaseEvent('Button_bottom_sheet');
-                            await showModalBottomSheet(
-                              isScrollControlled: true,
-                              backgroundColor: Colors.transparent,
-                              context: context,
-                              builder: (context) {
-                                return GestureDetector(
-                                  onTap: () =>
-                                      _model.unfocusNode.canRequestFocus
-                                          ? FocusScope.of(context)
-                                              .requestFocus(_model.unfocusNode)
-                                          : FocusScope.of(context).unfocus(),
-                                  child: Padding(
-                                    padding: MediaQuery.viewInsetsOf(context),
-                                    child: WildflowerDetailsComponentWidget(),
-                                  ),
-                                );
-                              },
-                            ).then((value) => safeSetState(() {}));
+                                'OBSERVATION_DETAILS_ABOUT_THE_SPECIES_BT');
+                            logFirebaseEvent('Button_navigate_to');
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => WildflowerDetailsWidget(),
+                              ),
+                            );
                           },
                           text: FFLocalizations.of(context).getText(
-                            'b2mfzpqh' /* View Wildflower Details */,
+                            'b2mfzpqh' /* About the species */,
                           ),
                           options: FFButtonOptions(
                             width: double.infinity,

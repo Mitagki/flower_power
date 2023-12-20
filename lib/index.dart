@@ -27,3 +27,7 @@ export '/pages/observation_details/observation_details_widget.dart'
 export '/pages/medal_details/medal_details_widget.dart' show MedalDetailsWidget;
 export '/pages/challenge_details/challenge_details_widget.dart'
     show ChallengeDetailsWidget;
+export '/pages/observation_details_copy/observation_details_copy_widget.dart'
+    show ObservationDetailsCopyWidget;
+export '/pages/wildflower_details_copy/wildflower_details_copy_widget.dart'
+    show WildflowerDetailsCopyWidget;

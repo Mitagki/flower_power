@@ -1,3 +1,4 @@
+import 'objectgesturesexample.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
@@ -140,7 +141,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/IMG_0316.jpeg',
+                                    'assets/images/IMG_1222.jpeg',
                                   ),
                                 ),
                               ),
@@ -184,7 +185,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
-                            homePageUsersRecord.displayName,
+                            valueOrDefault<String>(
+                              homePageUsersRecord.displayName,
+                              'User',
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
@@ -214,56 +218,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'HOME_homeCard_Appointments_ON_TAP');
-                            logFirebaseEvent(
-                                'homeCard_Appointments_upload_media_to_fi');
-                            final selectedMedia = await selectMedia(
-                              multiImage: false,
-                            );
-                            if (selectedMedia != null &&
-                                selectedMedia.every((m) => validateFileFormat(
-                                    m.storagePath, context))) {
-                              setState(() => _model.isDataUploading1 = true);
-                              var selectedUploadedFiles = <FFUploadedFile>[];
-
-                              var downloadUrls = <String>[];
-                              try {
-                                selectedUploadedFiles = selectedMedia
-                                    .map((m) => FFUploadedFile(
-                                          name: m.storagePath.split('/').last,
-                                          bytes: m.bytes,
-                                          height: m.dimensions?.height,
-                                          width: m.dimensions?.width,
-                                          blurHash: m.blurHash,
-                                        ))
-                                    .toList();
-
-                                downloadUrls = (await Future.wait(
-                                  selectedMedia.map(
-                                    (m) async => await uploadData(
-                                        m.storagePath, m.bytes),
-                                  ),
-                                ))
-                                    .where((u) => u != null)
-                                    .map((u) => u!)
-                                    .toList();
-                              } finally {
-                                _model.isDataUploading1 = false;
-                              }
-                              if (selectedUploadedFiles.length ==
-                                      selectedMedia.length &&
-                                  downloadUrls.length == selectedMedia.length) {
-                                setState(() {
-                                  _model.uploadedLocalFile1 =
-                                      selectedUploadedFiles.first;
-                                  _model.uploadedFileUrl1 = downloadUrls.first;
-                                });
-                              } else {
-                                setState(() {});
-                                return;
-                              }
-                            }
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => ObjectGesturesWidget()));
                           },
                           child: Material(
                             color: Colors.transparent,

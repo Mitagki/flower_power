@@ -1,10 +1,11 @@
 import '/backend/firebase_storage/storage.dart';
 import '/components/main_logo/main_logo_widget.dart';
-import '/components/observation_detail_component/observation_detail_component_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
+import '/pages/observation_details/observation_details_widget.dart';
+import '/pages/observation_details_copy/observation_details_copy_widget.dart';
 import 'my_observations_widget.dart' show MyObservationsWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';

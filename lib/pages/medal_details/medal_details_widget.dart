@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/challenge_details/challenge_details_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -75,8 +76,11 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 22.0,
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
+                        onPressed: () async {
+                          logFirebaseEvent(
+                              'MEDAL_DETAILS_arrow_back_ios_rounded_ICN');
+                          logFirebaseEvent('IconButton_navigate_back');
+                          Navigator.pop(context);
                         },
                       ),
                       Padding(
@@ -103,9 +107,8 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                     ],
                   ),
                 ),
-                Image.network(
-                  'https://images.unsplash.com/photo-1581100857557-30b7298cfa7f?w=1280&h=720',
-                  width: double.infinity,
+                Image.asset(
+                  'assets/images/pngwing.com.png',
                   height: 240.0,
                   fit: BoxFit.cover,
                 ),
@@ -169,7 +172,7 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                                   0.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(16.0),
                                 ),
                                 child: Padding(
@@ -200,7 +203,7 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                                   0.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(16.0),
                                 ),
                                 child: Padding(
@@ -241,8 +244,7 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .bodySmallFamily,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.normal,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
@@ -277,11 +279,19 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            logFirebaseEvent(
+                                'MEDAL_DETAILS_CHALLENGE_DETAILS_BTN_ON_T');
+                            logFirebaseEvent('Button_navigate_to');
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ChallengeDetailsWidget(),
+                              ),
+                            );
                           },
                           text: FFLocalizations.of(context).getText(
-                            'wepuz5ao' /* Learn More */,
+                            'wepuz5ao' /* Challenge Details */,
                           ),
                           options: FFButtonOptions(
                             width: double.infinity,
@@ -302,7 +312,7 @@ class _MedalDetailsWidgetState extends State<MedalDetailsWidget> {
                                           .titleMediumFamily),
                                 ),
                             elevation: 2.0,
-                            borderRadius: BorderRadius.circular(10.0),
+                            borderRadius: BorderRadius.circular(40.0),
                           ),
                         ),
                       ),

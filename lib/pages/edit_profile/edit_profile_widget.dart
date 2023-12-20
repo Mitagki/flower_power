@@ -143,7 +143,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Image.asset(
-                          'assets/images/IMG_0316.jpeg',
+                          'assets/images/IMG_1222.jpeg',
                         ),
                       ),
                     ),
@@ -429,37 +429,39 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          FlutterFlowRadioButton(
-                            options: [
-                              FFLocalizations.of(context).getText(
-                                'itdu7rgj' /* Male */,
-                              ),
-                              FFLocalizations.of(context).getText(
-                                'u2wpor3c' /* Female */,
-                              ),
-                              FFLocalizations.of(context).getText(
-                                'modag4ov' /* Undisclosed */,
-                              )
-                            ].toList(),
-                            onChanged: (val) => setState(() {}),
-                            controller: _model.radioButtonValueController ??=
-                                FormFieldController<String>(
-                                    editProfileUsersRecord.userSex),
-                            optionHeight: 25.0,
-                            textStyle: FlutterFlowTheme.of(context).bodySmall,
-                            selectedTextStyle:
-                                FlutterFlowTheme.of(context).bodyMedium,
-                            textPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 12.0, 0.0),
-                            buttonPosition: RadioButtonPosition.left,
-                            direction: Axis.horizontal,
-                            radioButtonColor:
-                                FlutterFlowTheme.of(context).primary,
-                            inactiveRadioButtonColor:
-                                FlutterFlowTheme.of(context).grayLight,
-                            toggleable: false,
-                            horizontalAlignment: WrapAlignment.center,
-                            verticalAlignment: WrapCrossAlignment.start,
+                          Flexible(
+                            child: FlutterFlowRadioButton(
+                              options: [
+                                FFLocalizations.of(context).getText(
+                                  'itdu7rgj' /* Male */,
+                                ),
+                                FFLocalizations.of(context).getText(
+                                  'u2wpor3c' /* Female */,
+                                ),
+                                FFLocalizations.of(context).getText(
+                                  'modag4ov' /* Undisclosed */,
+                                )
+                              ].toList(),
+                              onChanged: (val) => setState(() {}),
+                              controller: _model.radioButtonValueController ??=
+                                  FormFieldController<String>(
+                                      editProfileUsersRecord.userSex),
+                              optionHeight: 25.0,
+                              textStyle: FlutterFlowTheme.of(context).bodySmall,
+                              selectedTextStyle:
+                                  FlutterFlowTheme.of(context).bodyMedium,
+                              textPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 12.0, 0.0),
+                              buttonPosition: RadioButtonPosition.left,
+                              direction: Axis.horizontal,
+                              radioButtonColor:
+                                  FlutterFlowTheme.of(context).primary,
+                              inactiveRadioButtonColor:
+                                  FlutterFlowTheme.of(context).grayLight,
+                              toggleable: false,
+                              horizontalAlignment: WrapAlignment.center,
+                              verticalAlignment: WrapCrossAlignment.start,
+                            ),
                           ),
                         ],
                       ),

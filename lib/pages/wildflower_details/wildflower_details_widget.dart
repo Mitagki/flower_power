@@ -1,3 +1,4 @@
+import 'objectgesturesexample.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -88,7 +89,7 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                             EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '6fu6v0x1' /* Wildflower Details */,
+                            '6fu6v0x1' /* About the species */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
@@ -107,10 +108,8 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                     ],
                   ),
                 ),
-                Image.network(
-                  'https://images.unsplash.com/photo-1600465590724-af53b0184282?w=1280&h=720',
-                  width: double.infinity,
-                  height: 240.0,
+                Image.asset(
+                  'assets/images/Belis_peremnis_-_panoramio.jpg',
                   fit: BoxFit.cover,
                 ),
                 Padding(
@@ -119,33 +118,62 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            '4vcib0wl' /* Wildflower Name */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .headlineMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 16.0, 0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                '4vcib0wl' /* Bellis perennis */,
                               ),
-                        ),
+                              style: FlutterFlowTheme.of(context)
+                                  .headlineMedium
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .headlineMediumFamily,
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.w500,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey(
+                                            FlutterFlowTheme.of(context)
+                                                .headlineMediumFamily),
+                                  ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 16.0, 0.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: FlutterFlowTheme.of(context).primary,
+                              borderRadius: 20.0,
+                              borderWidth: 1.0,
+                              buttonSize: 40.0,
+                              fillColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
+                              icon: Icon(
+                                Icons.view_in_ar,
+                                color: FlutterFlowTheme.of(context).primary,
+                                size: 24.0,
+                              ),
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => ObjectGesturesWidget()));
+                              },
+                            ),
+                          ),
+                        ],
                       ),
                       Padding(
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'xciuwfj4' /* Scientific Name */,
+                            'xciuwfj4' /* Daisy */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
@@ -166,7 +194,7 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'klvt48l3' /* This wildflower is native to t... */,
+                            'klvt48l3' /* Bellis perennis (/ˈbɛləs pəˈrɛ... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
@@ -186,108 +214,6 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                       Padding(
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 12.0, 0.0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12.0, 5.0, 12.0, 5.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'kbmwwo4r' /* Height */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: Colors.white,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
-                                        ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 12.0, 0.0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12.0, 5.0, 12.0, 5.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'wcgie030' /* Bloom Time */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: Colors.white,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
-                                        ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 12.0, 0.0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12.0, 5.0, 12.0, 5.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'gjkxpviz' /* Habitat */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: Colors.white,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
-                                        ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
                             '103ubohh' /* Additional Information */,
@@ -297,7 +223,7 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .bodySmallFamily,
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color: FlutterFlowTheme.of(context).primary,
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.normal,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
@@ -307,11 +233,11 @@ class _WildflowerDetailsWidgetState extends State<WildflowerDetailsWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            0.0, 10.0, 0.0, 10.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'o82oee7w' /* This wildflower is an importan... */,
+                            'o82oee7w' /* Bellis perennis is a perennial... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodySmall

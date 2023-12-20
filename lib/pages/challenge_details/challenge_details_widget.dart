@@ -75,8 +75,11 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 22.0,
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
+                        onPressed: () async {
+                          logFirebaseEvent(
+                              'CHALLENGE_DETAILS_arrow_back_ios_rounded');
+                          logFirebaseEvent('IconButton_navigate_back');
+                          Navigator.pop(context);
                         },
                       ),
                       Padding(
@@ -120,7 +123,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '1wt4y7ac' /* 30-Day Fitness Challenge */,
+                            '1wt4y7ac' /* Weekly Eindhoven Challenge */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
@@ -148,7 +151,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .titleMediumFamily,
-                                color: FlutterFlowTheme.of(context).secondary,
+                                color: FlutterFlowTheme.of(context).primary,
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.w500,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
@@ -162,7 +165,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'd72vitqq' /* Join our 30-day fitness challe... */,
+                            'd72vitqq' /* Join our Weekly Eindhoven Chal... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
@@ -190,7 +193,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                                   0.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(16.0),
                                 ),
                                 child: Padding(
@@ -221,7 +224,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                                   0.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(16.0),
                                 ),
                                 child: Padding(
@@ -252,7 +255,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                                   0.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(16.0),
                                 ),
                                 child: Padding(
@@ -285,8 +288,11 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             0.0, 24.0, 0.0, 30.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            logFirebaseEvent(
+                                'CHALLENGE_DETAILS_JOIN_CHALLENGE_BTN_ON_');
+                            logFirebaseEvent('Button_navigate_back');
+                            Navigator.pop(context);
                           },
                           text: FFLocalizations.of(context).getText(
                             'k178skh7' /* Join Challenge */,
@@ -312,6 +318,7 @@ class _ChallengeDetailsWidgetState extends State<ChallengeDetailsWidget> {
                                           .headlineSmallFamily),
                                 ),
                             elevation: 3.0,
+                            borderRadius: BorderRadius.circular(40.0),
                           ),
                         ),
                       ),

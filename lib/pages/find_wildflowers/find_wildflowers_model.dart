@@ -1,8 +1,9 @@
 import '/components/main_logo/main_logo_widget.dart';
-import '/components/wildflower_details_component/wildflower_details_component_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/wildflower_details/wildflower_details_widget.dart';
+import '/pages/wildflower_details_copy/wildflower_details_copy_widget.dart';
 import 'find_wildflowers_widget.dart' show FindWildflowersWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';

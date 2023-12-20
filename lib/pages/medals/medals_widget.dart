@@ -1,8 +1,9 @@
 import '/components/main_logo/main_logo_widget.dart';
-import '/components/medal_detail_component/medal_detail_component_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/medal_details/medal_details_widget.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -165,19 +166,14 @@ class _MedalsWidgetState extends State<MedalsWidget>
                                   onTap: () async {
                                     logFirebaseEvent(
                                         'MEDALS_PAGE_Container_90talb15_ON_TAP');
-                                    logFirebaseEvent('Container_bottom_sheet');
-                                    await showModalBottomSheet(
-                                      isScrollControlled: true,
-                                      backgroundColor: Colors.transparent,
-                                      context: context,
-                                      builder: (context) {
-                                        return Padding(
-                                          padding:
-                                              MediaQuery.viewInsetsOf(context),
-                                          child: MedalDetailComponentWidget(),
-                                        );
-                                      },
-                                    ).then((value) => safeSetState(() {}));
+                                    logFirebaseEvent('Container_navigate_to');
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            MedalDetailsWidget(),
+                                      ),
+                                    );
                                   },
                                   child: Material(
                                     color: Colors.transparent,
@@ -378,15 +374,18 @@ class _MedalsWidgetState extends State<MedalsWidget>
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
-                                            Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'h3c0z0oa' /* Lesser celandines */,
+                                            Flexible(
+                                              child: AutoSizeText(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'h3c0z0oa' /* Lesser celandines */,
+                                                ),
+                                                textAlign: TextAlign.center,
+                                                maxLines: 1,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .headlineSmall,
                                               ),
-                                              textAlign: TextAlign.center,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmall,
                                             ),
                                           ],
                                         ),
