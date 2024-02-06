@@ -44,7 +44,7 @@ class _ObjectGesturesWidgetState extends State<ObjectGesturesWidget> {
   double? x = 3;
   double? y = 3;
   double? z = 3;
-  var scale = 1;
+  var scale = 0.5;
   List<StreamSubscription<dynamic>> _streamSubscriptions =
   <StreamSubscription<dynamic>>[];
 
@@ -91,7 +91,7 @@ class _ObjectGesturesWidgetState extends State<ObjectGesturesWidget> {
                     children: [
                       ElevatedButton(
                         onPressed: onScale,
-                        child: (scale == 1) ? Text("1m\u00b2") : Text("2m\u00b2"),
+                        child: (scale == 1) ? Text("1m\u00b2") : (scale == 0.5) ? Text("0.50m\u00b2") : Text("0.75m\u00b2"),
                         style: ElevatedButton.styleFrom(
                             foregroundColor: Colors.white,
                             backgroundColor: (x!>-3 && x!<3 && y!>-3 && y!<3 && z!>5) ? Color(0xFF32DE8A) : Colors.red),
@@ -167,10 +167,14 @@ class _ObjectGesturesWidgetState extends State<ObjectGesturesWidget> {
     anchors = [];
 
     setState(() {
-      if (scale == 1){
-        scale = 2;
+
+      if (scale == 0.5){
+        scale = 0.75;
       }
-      else {
+      else if (scale == 1){
+        scale = 0.5;
+      }
+      else if (scale == 0.75){
         scale = 1;
       }
     });
@@ -189,8 +193,8 @@ class _ObjectGesturesWidgetState extends State<ObjectGesturesWidget> {
       var newNode = ARNode(
           type: NodeType.webGLB,
           uri:
-          "https://github.com/Mitagki/gltf/raw/main/border2.glb",
-          scale: (scale == 1) ? a.Vector3(0.5, 0.5, 0.5) : a.Vector3(0.7, 0.7, 0.7),
+          "https://github.com/Mitagki/gltf/raw/main/border4.glb",
+          scale: (scale == 1) ? a.Vector3(0.5, 0.5, 0.5) : (scale == 0.5) ? a.Vector3(0.35, 0.35, 0.35) : a.Vector3(0.435, 0.435, 0.435),
           position: a.Vector3(0.0, 0.0, 0.0),
           rotation: a.Vector4(1.0, 0.0, 0.0, 0.0));
       bool? didAddNodeToAnchor =
